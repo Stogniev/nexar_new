@@ -1,0 +1,247 @@
+@import "style.css";
+
+.citystream-bn {
+    background: url(../images/city-bn.png) no-repeat;
+    background-size: cover;
+}
+.citystream-bn:before {
+    z-index: 10;
+}
+.citystream-bn-title {
+    font-family: 'montserratregular';
+    font-size: 60px;
+    color: #fbb040;
+    line-height: 70px;
+    display: block;
+    width:100%;
+    text-align: center;
+}
+.citystream-bn-sub {
+    font-family: 'montserratregular';
+    font-size: 45px;
+    color: #fff;
+    line-height: 55px;
+    display: block;
+    width:100%;
+    text-align: center;
+}
+.city-bn-center {
+    height: 100%;
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+/* citysteam section */
+.citystream-section {
+    padding: 40px 0 120px;
+	font-size:16px;
+}
+.citysteam-title {
+    text-transform: none;
+    color: #221e22;
+    text-align:center;
+	font-size:24px;
+	font-family: 'Open Sans', sans-serif;
+}
+.citystream-title-color {
+    font-weight: bold;
+}
+.orange {
+    color: #fbb040
+}
+.citystream-sub {
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
+}
+.citystream-sub-text {
+    margin: 10px 0;
+}
+.citystream-video-holder {
+    margin: 60px 0 0;
+}
+.citystream-video {
+    margin: 0 auto;
+    display: block;
+}
+/* how it works */
+.works-how-section {
+    padding: 50px 0 0;
+    background-color: #221e22;
+}
+.works-how-title {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    color: #fbb040;
+    font-family: 'montserratregular';
+}
+.ion-ios-arrow-thin-right {
+    width: 25px;
+    height: 40px;
+    font-size: 40px;
+    text-align: left;
+    color: #fbb040;
+    content: '';
+    display: block;
+}
+.works-how-list {
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 50px 0 120px;
+}
+.works-how-box {
+    position: relative;
+    font-size: 16px;
+    color: #fff;
+    width:23%;
+    margin: 0 47px;
+}
+.works-how-arrow {
+    position: absolute;
+    right: -58px;
+    top:50%;
+    margin: -20px 0 0;
+}
+.how-works-img {
+    display: block;
+    width:100%;
+}
+/* contacts us */
+.contacts-us-section {
+    padding: 65px 0 110px;
+}
+.contacts-us-section h3 {
+	font-size:24px;
+	text-align:center;
+	font-family: 'Open Sans', sans-serif;
+}
+.contacts-us-form {
+    max-width: 920px;
+    margin: 105px auto 0;
+}
+.contacts-us-form .sign-input {
+    color: #000000;
+    font-size: 20px;
+    width: 100%;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    background: none;
+    line-height: 36px;
+    height: 36px;
+    z-index: 100;
+    position: relative;
+	border-bottom: 1px solid #b6b6b6;
+}
+
+.contacts-us-form .sign-input-box label:after,
+.contacts-us-form .sign-input-box label:before { border:none !important;}
+.contacts-area:focus {
+	padding-top:21px !important;
+	margin-top:-18px;
+}
+.contacts-us-form .sign-input:focus {
+	padding-top:18px;
+	margin-top:-18px;
+	height:54px;
+}
+.contacts-area ~ label,
+.contacts-us-form .sign-input ~ label {
+    transition: all 0.08s linear;
+    -moz-transition: all 0.08s linear;
+    -webkit-transition: all 0.08s linear;
+    -o-transition: all 0.08s linear;
+	font-family: 'Open Sans';
+    color: #221e22;
+    font-size: 14px;
+    line-height: 18px;
+	font-weight:400;
+    position: absolute;
+}
+.contacts-area ~ label { top:0;}
+.contacts-area:focus ~ label,
+.contacts-area:not(:focus):valid ~ label {top:-25px;}
+.contacts-us-form .sign-input ~ label {top:0px;}
+.contacts-us-form .sign-input:focus ~ label,
+.contacts-us-form .sign-input:not(:focus):valid ~ label {top: -20px; }
+
+.contacts-form .sign-input-box {
+    width:100%;
+    float: none;
+}
+.contacts-us-box {
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 0 65px;
+}
+.contacts-us-form .sign-input-box {
+    width:48%;
+    float: none;
+}
+.contacts-us-form .minimal-form-input {
+    display: block;
+}
+.contacts-us-form .contacts-textarea {
+    width:100%;
+}
+.contacts-us-form .minimal-form-input label:before {
+    border-bottom: 1px solid #b6b6b6;
+}
+.contacts-us-form .minimal-form-input label:after {
+    border-bottom: 2px solid #000;
+}
+.contacts-us-form .form-check {
+    text-align: center;
+    margin: 60px 0;
+}
+.contacts-us-form .send-bt {
+    display: block;
+    margin: 0 auto;
+    color: #fff;
+    text-transform: uppercase;
+    width: 168px;
+    height: 49px;
+    background-color: #fbb040;
+    text-align: center;
+    line-height: 49px;
+    font-size: 20px;
+    font-family: 'montserratregular';
+    font-weight: normal;
+    border: none;
+}
+.contacts-us-form .send-bt:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}

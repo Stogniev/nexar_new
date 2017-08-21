@@ -1,0 +1,40 @@
+@import "style.css";
+
+.solutions-page {
+    margin-top: 233px;
+}
+.solutions-page section {
+    margin-bottom: 150px;
+}
+.solutions-page .left {
+    padding-left: 117px;
+}
+.solutions-page figure {
+    display: flex;
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;
+}
+.solutions-page .right figure {
+    justify-content: flex-start;
+}
+.solutions-page .right figcaption {
+    padding-left: 100px;
+}
+.solutions-page h3 {
+    text-transform: uppercase;
+    font: 500 45px/48px 'montserratregular';
+    margin: 20px 0;
+}
+.solutions-page p {
+    font: 500 24px/40px 'Open Sans';
+}
+.laptop { margin-right:-215px;}
+.citystream { margin-right:-183px;}
+.hardware { margin-right:-288px;}
+
+
+
+.solutions-page a {
+    color: inherit;
+}

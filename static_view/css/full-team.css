@@ -1,0 +1,203 @@
+@import "style.css";
+
+.full-team-img {
+	min-height: 100%;
+	background:#221e22 url('../images/full-team/main_banner.jpg') no-repeat 50% 50%;
+	-webkit-background-size: cover;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+.full-team-img:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(34, 30, 34, .4);
+	z-index: -1;
+}
+.full-team-img h1 {
+	font: 400 60px 'montserratregular';
+	color: #fff;
+	text-transform: uppercase;
+	margin:0;
+}
+.founders-info {
+	padding: 82px 0 88px;
+	background:#221e22;
+}
+.founders-info h3 {
+	font: 400 24px/26px 'montserratregular';
+	color: #fbb040;
+	margin:0 0 78px;
+	text-transform:uppercase;
+	text-align:center;
+}
+.founders-list {
+	text-align:center;
+	font-size:0;
+	line-height:0;
+}
+.founders-list .founders-item {
+	display:inline-block;
+	vertical-align:top;
+	padding:0 60px;
+	width:410px;
+	text-align:left;
+}
+.founders-list .founders-item .photo {
+	display:block;
+	margin:0 0 11px;
+	width:290px;
+	height:270px;
+	border:0 none;
+}
+.founders-list .founders-item .name {
+	display:block;
+	margin:0 0 5px;
+	font:400 22px/30px 'Open Sans', sans-serif;
+	color:#fff;
+}
+.founders-list .founders-item .post {
+	display:block;
+	font:400 14px/19px 'Open Sans', sans-serif;
+	color:#fbb040;
+}
+.founders-list .founders-item .info-text {
+	margin:20px 0 0;
+	padding:15px 0 0;
+	border-top:1px solid #fff;
+	font:400 14px 'Open Sans', sans-serif;
+	color:#fff;
+}
+.founders-list .founders-item .info-text p { margin:0;}
+.team-info {
+	padding:60px 0 100px;
+}
+.team-info h3 {
+	font: 400 24px/17px 'montserratregular';
+	color: #221e22;
+	margin:0 0 61px;
+	text-transform:uppercase;
+	text-align:center;
+}
+.team-info .team-box {
+	padding:71px 0 0;
+	background:#fff;
+}
+.team-box .container { overflow:hidden;}
+.team-info .team-box h3 {
+	font: 400 24px/17px 'montserratregular';
+	color: #fbb040;
+	margin:0 0 55px;
+	text-transform:uppercase;
+	text-align:left;
+	/*max-width:1250px;*/
+}
+.imga {
+	width: 25px;
+}
+.holder-team-list { padding:0 0 100px;}
+.holder-team-list .team-box:nth-child(2n) {
+	background:#fafafa;
+	padding-bottom:20px;
+}
+.team-info .team-box .team-list {
+	overflow:hidden;
+	font-size:0;
+	line-height:0;
+	/*max-width:1250px;*/
+	margin:0 -15px;
+	-webkit-justify-content: flex-start;
+	justify-content: flex-start;
+}
+.team-list .team-item {
+	width:25%;
+	padding:0 15px 60px;
+	display:inline-block;
+	vertical-align:top;
+}
+.team-list .team-item .photo {
+	display:block;
+	margin:0 0 11px;
+	max-width:290px;
+	max-height:270px;
+	height:auto;
+	width:100%;
+	border:0 none;
+}
+.team-list .team-item .name {
+	display:block;
+	margin:0 0 5px;
+	font:400 22px/30px 'Open Sans', sans-serif;
+	color:#221e22;
+}
+.team-list .team-item .post {
+	display:block;
+	font:400 14px/19px 'Open Sans', sans-serif;
+	color:#fbb040;
+}
+.team-list .team-item .info-text {
+	margin:20px 0 0;
+	padding:15px 0 0;
+	border-top:1px solid #221e22;
+	font:400 14px 'Open Sans', sans-serif;
+	color:#221e22;
+}
+.team-list .team-item .info-text p {
+	margin: 0;
+	line-height: 25px;
+}
+.info-working {
+	text-align:center;
+	font: 400 24px 'montserratregular';
+}
+.info-working h3 {
+	color:#221e22;
+	letter-spacing: -0.2px;
+	margin:0 0 48px;
+	line-height:normal;
+}
+.info-working a {
+	display:inline-block;
+	vertical-align:top;
+	width:210px;
+	height:48px;
+	text-align:center;
+	text-decoration:none;
+	text-transform:uppercase;
+	font: 400 20px/48px 'montserratregular';
+	color:#fff;
+	background:#fbb040;
+	-webkit-transition: all 0.15s linear;
+	-moz-transition: all 0.15s linear;
+	transition: all 0.15s linear;
+}
+.info-working a:hover { opacity:0.8;}
+.more-team {
+	text-align:center;
+	font-size:0;
+	line-height:0;
+	display:none;
+}
+.more-team a {
+	display:inline-block;
+	vertical-align:top;
+	height:45px;
+	text-align:center;
+	text-decoration:none;
+	text-transform:uppercase;
+	font: 400 13px/45px 'montserratregular';
+	color:#fff;
+	background:#fbb040;
+	-webkit-transition: all 0.15s linear;
+	-moz-transition: all 0.15s linear;
+	transition: all 0.15s linear;
+	padding:0 15px;
+}
+.more-team a:hover { opacity:0.8;}
