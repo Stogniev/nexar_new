@@ -8,8 +8,12 @@ The files and directories used for static site representation only:
 
 
 ```
-static_view/*.html
-static_view/js/main.js
+*.html
+js/main.js
 ```
 
-The remained files are used BOTH for dynamic and static site.
+The remained files are used BOTH for dynamic and static site:
+video/*
+css/*
+images/*
+fonts/*
