@@ -116,7 +116,9 @@
     font-size: 14px;
 }
 .contact-form .input-inline input:not(:focus):valid ~ label,
-.contact-form .input-inline input:focus ~ label {top: 0px; }
+.contact-form .input-inline input:focus ~ label {
+    top: 0px;
+}
 .contact-form .input-inline input ~ label {
     transition: all 0.08s linear;
     -moz-transition: all 0.08s linear;
@@ -126,6 +128,7 @@
     font-size: 14px;
 	line-height:26px;
 	top:30px;
+    left: 0;
     position: absolute;
 }
 .contact-form input[type="submit"] {
