@@ -189,6 +189,8 @@
     }
     .store-item {
         margin: 25px 0;
+		padding-bottom:36px !important;
+		display:block;
     }
     .footer-top .clearfix > div {margin: 40px 0 0;}
     .footer-top .clearfix > div:first-child {

@@ -621,8 +621,10 @@ button:hover {
 .sign-form .sign-input:focus {
 	padding-top:18px;
 	margin-top:-18px;
+    border-bottom: 2px solid #000;
 	height:66px;
 }
+.sign-form .sign-input:not(:focus):valid {border-bottom: 1px solid #000; padding-bottom:2px;}
 .sign-form .sign-input:not(:focus):valid ~ label,
 .sign-form .sign-input:focus ~ label {top: -25px; }
 .sign-form .sign-input ~ label {
@@ -632,10 +634,11 @@ button:hover {
     -o-transition: all 0.08s linear;
 	color:#abaaaa;
     font-size: 14px;
-	font-weight:600;
+	font-weight:400;
 	top:0px;
     position: absolute;
 }
+.sign-form .sign-input ~ label .text-required-star {font-weight:600;}
 .button-box {
     text-align: center;
     float: left;
@@ -810,12 +813,18 @@ button:hover {
 }
 .store-item .clearfix {
     text-align: center;
+	position:absolute;
+	bottom:0;
+	left:0;
+	right:0;
 }
 .store-item {
     width:33.33%;
-    padding: 0 7%;
-    float: left;
+    padding: 0 7% 36px;
+    /*float: left;*/
     text-align: center;
+	display:table-cell;
+	position:relative;
 }
 .store-item p {
     padding: 0 0 27px;
@@ -1157,6 +1166,7 @@ button:hover {
     color: #221e22;
     font-family: 'montserratregular';
 }
+.business-more.insurance-more { width:260px;}
 .business-text {
     display: block;
     font-size: 14px;
