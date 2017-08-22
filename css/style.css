@@ -1756,7 +1756,8 @@ h2.dark-title {
     left: 50%;
     margin: 0 0 0 -10px;
     bottom: 39px;
-    background: #000;
+    /*background: #000;*/
+	font-size:30px;
 }
 .orange-title {
     color: #fbb040;
