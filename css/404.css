@@ -1,9 +1,11 @@
 @import "style.css";
 
-body.error-page {
+body .error-page {
 	background:#f6f7f7;
 }
-.error-page .content { padding:146px 0;}
+.error-page.content {
+	padding:146px 0;
+}
 .img-404 {
 	display:block;
 	margin:0 auto;
