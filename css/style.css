@@ -832,7 +832,7 @@ button:hover {
 }
 .product-img {
     margin: 0 0 10px 0;
-    height:160px;
+    height:220px;
     display: flex; 
     display: -webkit-box; 
     display: -ms-flexbox; 
@@ -2055,7 +2055,7 @@ h2.title-md {
     padding: 0 65px;
     float: left;
     position: relative;
-    height: 280px;  /* AY: need review */
+    min-height: 280px;  /* AY: need review */
 }
 .open-positions-box:before {
     width: 1px;
