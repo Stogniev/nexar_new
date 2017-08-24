@@ -424,7 +424,9 @@
     opacity: .3;
     transition: .2s;
 }
-
+.path-section .second-icon {
+    opacity: 1;
+}
 .path-section .icon img {
     width: 100%;
 }
@@ -457,13 +459,6 @@
 
 .path-section .icon {
     position: relative;
-}
-
-.path-section .desc {
-    text-align: center;
-    font-family: 'montserratregular', sans-serif;
-    font-size: 20px;
-    color: #000;
 }
 
 .result-section {
@@ -667,7 +662,7 @@ textarea:focus:-ms-input-placeholder {
 .arrow-dropdown:after {
     position: absolute;
     content: '';
-    top: 10px;
+    top: -2px;
     right: 10px;
     width: 0;
     height: 0;
@@ -680,7 +675,7 @@ textarea:focus:-ms-input-placeholder {
 .arrow-dropdown:before {
     position: absolute;
     content: '';
-    top: 13px;
+    top: 0;
     right: 10px;
     width: 0;
     height: 0;
@@ -796,97 +791,13 @@ textarea:focus:-ms-input-placeholder {
 .Select--single > .Select-control .Select-value {
     padding-left: 0;
 }
-/* footer */
-.footer-fleets {
-    color: #ccc;
-    position: relative;
-    z-index: 10;
-    background-color: #252525;
-}
-.footer-fleets .container {
-    width: 100%;
-    padding: 0 28px;
-    max-width: none;
-}
-.col-md-3 {
-    float: left;
-    width:25%;
-}
-.footer-top {
-    padding: 55px 0;
-}
-.footer-menu-title {
-    display: block;
-    margin-bottom: 12px;
-    color: #777;
-    font-size: 12px;
-    letter-spacing: 2px;
-    font-family: 'montserratregular';
-    text-transform: uppercase;
-}
-.footer-menu {
-    margin: 0;
-}
-.footer-menu li {
-    padding: 4px 0;
-    list-style-type: none;
-}
-.footer-menu li a {
-    display: block;
-    color: #ccc;
-    transition: color 0.2s;
-    -moz-transition: color 0.2s;
-    -webkit-transition: color 0.2s;
-    font-size: 14px;
-}
-.footer-menu li a:hover {
-    color: #fbb040;
-}
-.footer-copy {
-    border-top: 1px solid rgba(255,255,255,0.1);
-    padding: 20px 0;
-}
-.copy {
-    float: left;
-    font-size: 12px;
-    color: #777;
-    line-height: 22px;
-    margin-top: 3px;
-}
-.footer-soc {
-    float: right;
-    overflow: hidden;
-}
-.footer-soc li {
-    float: left;
-    margin-left: 20px;
-}
-.footer-soc li a {
-    display: block;
-    line-height: 22px;
-    height: 24px;
-    position: relative;
-    transition: all 0.2s linear;
-    -moz-transition: all 0.2s linear;
-    -webkit-transition: all 0.2s linear;
-}
-.footer-soc li a i {
-    font-size: 20px;
-    color: #777;
-    transition: all 0.2s linear;
-    -moz-transition: all 0.2s linear;
-    -webkit-transition: all 0.2s linear;
-}
-.footer-soc li a:hover i {
-    color: #fbb040;
-}
+
 
 /*select*/
 .contact-form .input-inline .Select-control {
     border: none;
     border-bottom: 2px solid #b6b6b6;
     border-radius: 0;
-    margin-top: 12px;
 }
 .contact-form .input-inline .Select-placeholder {
     font-size: 14px;
@@ -894,6 +805,13 @@ textarea:focus:-ms-input-placeholder {
     color: #757575;
     padding: 0;
     line-height: 30px;
+    top: 22px;
+}
+.contact-form .input-inline .Select-value {
+    top: 0;
+}
+.contact-form .input-inline .Select-menu-outer {
+    top: 10px;
 }
 .contact-form .input-inline .Select-placeholder b {
     color: #d71616;
@@ -944,7 +862,125 @@ textarea:focus:-ms-input-placeholder {
 .sign-input-box select.form-control:focus {
     outline: 0;
 }
+.is-focused:not(.is-open) > .Select-control {
+    box-shadow: none;
+}
+#van, #van-2, #van-3 {
+    opacity: 0;
+    transition: ease .1s;
+}
+#line-1-2 rect, #line-2-3 rect {
+    width: 0;
+    transition: ease .1s;
+}
+#wi-fi-sign-1, #wi-fi-sign-2,
+#headlights-2, #headlights-3 {
+    opacity: 0;
+    transition: .05s;
+}
+#be-connected.active #van {
+    opacity: 1;
+}
+#be-connected.active #line-1-2 rect {
+    width: 199px;
+    transition-delay: .1s;
+}
+#be-connected.active #van-2 {
+    opacity: 1;
+    transition-delay: .2s;
+}
+#be-connected.active #line-2-3 rect {
+    width: 199px;
+    transition-delay: .3s;
+}
+#be-connected.active #van-3 {
+    transition-delay: .4s;
+    opacity: 1;
+}
+#be-connected.active #wi-fi-sign-1, #be-connected.active #wi-fi-sign-2,
+#be-connected.active #headlights-2, #be-connected.active #headlights-3 {
+    opacity: 1;
+    transition-delay: .5s;
+}
 
+
+
+/*animation be-protected*/
+#sheild {
+    transform: translate(500px, 0);
+    transition: ease .3s;
+    opacity: 0;
+}
+#sheild.active {
+    transform: translate(48px, 0);
+    opacity: 1;
+}
+#van-1 {
+    transform: translate(-500px, 98px);
+    transition: ease .3s;
+    opacity: 0;
+}
+#van-1.active {
+    transform: translate(0, 98px);
+    opacity: 1;
+}
+#wi-fi-sign {
+    opacity: 0;
+    transform: scale(.1);
+    transition: .2s;
+    transition-delay: .2s;
+}
+#headlights {
+    opacity: 0;
+    transition: ease .1s;
+    transition-delay: .5s;
+}
+#van-1.active #headlights {
+    opacity: 1;
+}
+#sheild.active + #wi-fi-sign {
+    opacity: 1;
+    transform: translate(166px, 113px) scale(1);
+}
+/**/
+/*animation camera*/
+#nexar-cam,
+#iphone-car,
+#wi-fi-sign-car,
+#waves {
+    opacity: 0;
+    transition: .2s;
+}
+#Mount.active #iphone-car {
+    opacity: 1;
+}
+#Mount.active #wi-fi-sign-car {
+    opacity: 1;
+    transition-delay: .3s;
+}
+#Mount.active #nexar-cam {
+    opacity: 1;
+    transition-delay: .5s;
+}
+#Mount.active #waves {
+    opacity: 1;
+    transition-delay: .7s;
+}
+
+#iphone {
+    transition: 1s;
+}
+#iphone.active {
+    transform: translate(937px, 180px) rotate(90deg);
+}
+#nexar-icon {
+    opacity: 0;
+    transition: 2s;
+}
+#iphone.active #nexar-icon {
+    opacity: 1;
+}
+/**/
 @media (max-width:1280px) {
     .banner.instruct h2 {
         font-size: 40px;
