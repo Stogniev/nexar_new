@@ -1,0 +1,49 @@
+@import "style.css";
+
+body.error-page {
+	background:#f6f7f7;
+}
+.error-page .content { padding:146px 0;}
+.img-404 {
+	display:block;
+	margin:0 auto;
+}
+.name-error-page {
+	margin:108px 0 205px;
+	text-align:center;
+	text-transform:uppercase;
+	font:104px/133px 'montserratbold', sans-serif;
+	color:#e4e8e8;
+	letter-spacing: 10.4px;
+	position:relative;
+}
+.name-error-page .img {
+	width:100%;
+	position:absolute;
+	top:18px;
+	left:0;
+	z-index:2;
+}
+.name-error-page .img img {
+	display:block;
+	margin:0 auto;
+}
+a.back-link {
+	width:260px;
+	height:64px;
+	background:#fbb040;
+	font:600 20px/64px 'Open Sans', sans-serif;
+	color:#fff;
+	letter-spacing: -0.2px;
+	text-align:center;
+	text-decoration:none;
+	-webkit-transition: all 0.15s linear;
+    -moz-transition: all 0.15s linear;
+    transition: all 0.15s linear;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	display:block;
+	margin:0 auto;
+}
+a.back-link:hover { opacity:0.8;}

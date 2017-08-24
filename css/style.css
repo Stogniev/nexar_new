@@ -4,6 +4,7 @@
 @import "full-team.css";
 @import "press-kit.css";
 @import "automotive.css";
+@import "404.css";
 
 @font-face {
     font-family: 'montserratregular';
@@ -1712,6 +1713,47 @@ h2.dark-title {
     /* background: url(../images/career-bn.png) no-repeat 50% 0; */
     background-size: cover;
 }
+.video-technology {
+	position:relative;
+	height:391px;
+	overflow:hidden;
+	padding:26px 0 27px;
+	margin-top:85px;
+}
+.video-technology .lower-slide {
+	float:right;
+	width:550px;
+	position:relative;
+	height:338px;
+}
+.video-technology .lower-slide:first-child { float:left;}
+.video-technology iframe {
+	width:100%;
+	height:338px;
+}
+.video-technology .lower-slide iframe { opacity:0.3;}
+.video-technology .lower-slide .shadow {
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	background:rgba(0,0,0,0.18);
+	z-index:1;
+	cursor:pointer;
+}
+.video-technology .upper-slide {
+	width:50%;
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:25%;
+	z-index:2;
+}
+.video-technology .upper-slide iframe {
+	height:391px;
+	width:100%;
+}
 
 /* TODO: refactor */
 .career-video {
@@ -1864,16 +1906,15 @@ h2.title-md {
     -webkit-box-pack: justify; 
     -moz-box-pack: justify; 
     -ms-flex-pack: justify; 
-    -webkit-justify-content: space-between; 
-    justify-content: space-between;
+    -webkit-justify-content: flex-start; 
+    justify-content: flex-start;
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap; 
     flex-wrap: wrap;
-    margin: 0 0 50px 0;
+    margin: 0;
 }
 .culture-list li {
-    width:33.33%;
-    float: left;
+    width:100%;
     display: flex; 
     display: -webkit-box; 
     display: -ms-flexbox; 
@@ -1885,31 +1926,55 @@ h2.title-md {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap; 
     flex-wrap: wrap;
+	font-family: 'Open Sans', sans-serif;
+	font-size:20px;
+	line-height:1.5;
+	padding:75px 0;
 }
 .culture-list li img {
     display: block;
-    width:100%;
+    /*width:100%;*/
+	max-width:480px;
+}
+.culture-list li.right img {
+	float:right;
+	margin:0 0 0 120px;
+}
+.culture-list li.left img {
+	float:left;
+	margin:0 120px 0 0;
+}
+.culture-list li.left .culture-text-item {
+	float:left;
+}
+.culture-list li.right .culture-text-item {
+	float:right;
+}
+.culture-list li.right {
+    -webkit-justify-content: flex-end; 
+    justify-content: flex-end;
 }
 .culture-text-item {
-    padding: 40px 40px;
-    background: #fafafa;
+	max-width:427px;
+	overflow:hidden;
 }
 .culture-title {
     display: block;
-    font-size: 24px;
+    font-size: 30px;
+	line-height:37px;
     color: #000000;
     font-family: 'montserratregular';
-    margin: 0 0 25px;
+    margin: 0 0 23px;
     width:100%;
 }
 .culture-text {
-    font-size: 18px;
-    line-height: 21px;
-    width:100%;
+	font-family: 'Open Sans', sans-serif;
+	font-size:20px;
+	line-height:1.5;
     display: block;
 }
 .culture-list-holder {
-    margin: 120px 0 0;
+    margin: 75px 0 0;
 }
 .culture-list-holder .culture-list:last-child {
     margin: 0;
@@ -1947,6 +2012,7 @@ h2.title-md {
 .darker-title {
     color: #242220;
 }
+.open-positions-section h2 { font-weight:400;}
 .open-position-title {
     display: block;
     font-size: 30px;
@@ -1970,6 +2036,16 @@ h2.title-md {
     margin: 50px 0 0;
     color: #fbb040;
 }
+.read-more i {
+	display:inline-block;
+	vertical-align:top;
+	height:25px;
+	width:16px;
+    font-size: 25px;
+	line-height:26px;
+	font-weight:bold;
+	margin-left:15px;
+}
 .open-positions-holder {
     overflow: hidden;
     margin: 100px 0 50px;
@@ -1979,7 +2055,7 @@ h2.title-md {
     padding: 0 65px;
     float: left;
     position: relative;
-    height: 340px;  /* AY: need review */
+    height: 280px;  /* AY: need review */
 }
 .open-positions-box:before {
     width: 1px;
@@ -2039,6 +2115,7 @@ h2.title-md {
     padding: 40px 0 115px;
     background-color: #fafafa;
 }
+.our-founders-section h2 { font-weight:400;}
 .founders-box {
     width:40%;
     font-size: 16px;
@@ -2095,6 +2172,9 @@ h2.title-md {
 .investors-list li {
     float: left;
     width:25%;
+}
+.investors-list li a {
+	display:block;
 }
 .investors-img {
     display: block;

@@ -17,4 +17,6 @@ video/*
 css/*
 images/*
 fonts/*
+
+.
 .
