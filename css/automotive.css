@@ -1,6 +1,6 @@
 .automotive-img {
     min-height: 500px;
-    background: url('../images/automotive/head_banner.png') no-repeat;
+    background: url('../images/automotive/automotive-bg.png') no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
     display: flex;
@@ -146,3 +146,11 @@
 	letter-spacing: -0.2px;
 }
 .contact-form input[type="submit"]:hover { opacity:0.8;}
+
+
+@media (max-width: 768px) {
+    .automotive-img {
+        height: 100vh;
+        background: url('../images/automotive/automotive-mobile-bg.png') no-repeat;
+        background-size: cover;
+    }
