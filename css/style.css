@@ -549,6 +549,7 @@ button:hover {
     background: #221e22;
     background: url(../images/driver_signup.png) no-repeat 50% 0;
     background-size: cover;
+    z-index: 1;
 }
 .title-sub {
     display: block;
@@ -799,7 +800,7 @@ button:hover {
     width: 100%;
     display: block;
     height: 3px;
-    border-bottom: 1px solid #e0e0e0;
+    
 }
 .minimal-form-input label:after {
     display: block;
@@ -1499,6 +1500,303 @@ h2.dark-title {
 .blog-box {
     width:29%;
 }
+.contact-form {
+    margin: 0 auto;
+    max-width: 600px;
+    border: solid 1px #dddddd;
+    border-radius: 5px;
+    padding: 80px 80px 64px 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.contact-form .input-inline {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+}
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+input:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder {
+    color: transparent;
+}
+
+input:focus:-moz-placeholder,
+textarea:focus:-moz-placeholder {
+    color: transparent;
+}
+
+input:focus:-ms-input-placeholder,
+textarea:focus:-ms-input-placeholder {
+    color: transparent;
+}
+.contact-form .dropdown-input,
+.contact-form .input-inline input {
+    width: 100%;
+    color: #000;
+    background: transparent;
+    font-size: 20px;
+    line-height: 25px;
+    border: none;
+    border-bottom: 2px solid #b6b6b6;
+    padding: 30px 0 9px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+}
+
+.contact-form .dropdown-input {
+    padding-top: 20px;
+    font-size: 14px;
+    color: #757575;
+    font-weight: 300;
+    cursor: pointer;
+    position: relative;
+}
+
+.contact-form .dropdown-input:after {
+    content: '*';
+    top: 0;
+    right: 0;
+    color: #d71616;
+}
+
+.contact-form .dropdown-input:hover .dropdown {
+    left: 0;
+    -moz-opacity: 1;
+    opacity: 1;
+}
+.arrow-dropdown:after {
+    position: absolute;
+    content: '';
+    top: -2px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 8px 7px 0px 7px;
+    border-radius: 6px;
+    border-color: #fff transparent transparent transparent;
+}
+
+.arrow-dropdown:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 8px 7px 0px 7px;
+    border-radius: 10px;
+    border-color: #757575 transparent transparent transparent;
+}
+
+.contact-form .input-inline>div {
+    position: relative;
+    margin-bottom: 30px;
+    outline: 0;
+}
+
+.contact-form .input-inline .placeholder span {
+    color: #d71616;
+}
+.contact-form input:focus + .placeholder,
+.contact-form input:valid + .placeholder {
+    top: -20px;
+}
+.contact-form label > .placeholder {
+    color: #757575;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    -webkit-transition: top 0.2s ease;
+    -o-transition: top 0.2s ease;
+    transition: top 0.2s ease;
+}
+.contact-form .input-inline input:focus {
+    border-color: #000;
+    outline: 0;
+}
+
+.contact-form button {
+    width: 172px;
+    background-color: #fbb040;
+    color: #fff;
+    padding: 12px 20px;
+    font-size: 20px;
+    font-family: 'Open Sans';
+    border: 0;
+    margin-top: 65px;
+}
+.contact-form button:focus {
+    outline: none;
+}
+.contact-form .Select-menu-outer {
+    position: absolute;
+    top: calc(100% + 2px);
+    width: 100%;
+    z-index: 5;
+    -webkit-transition: all 0s ease 0.2s, opacity 0.2s ease;
+    transition: all 0s ease 0.2s, opacity 0.2s ease;
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 5px rgba(151,151,151,0.6);
+    box-shadow: 0 0 5px rgba(151,151,151,0.6);
+    margin: 0;
+}
+.contact-form .Select-menu-outer>div:hover {
+    background: #44355b;
+
+}
+.contact-form .Select-menu-outer>div>div:hover {
+    color: #fff;
+}
+.contact-form .Select-menu-outer:after {
+    position: absolute;
+    content: '';
+    bottom: 100%;
+    right: 9px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 7px 8px 7px;
+    border-color: transparent transparent #fff transparent;
+}
+
+.contact-form .Select-menu-outer:before {
+    position: absolute;
+    content: '';
+    bottom: calc(100% + 2px);
+    right: 9px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 7px 8px 7px;
+    border-color: transparent transparent #b6b6b6 transparent;
+}
+
+.contact-form .Select-menu-outer li {
+    padding: 5px 20px;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    list-style-type: none;
+}
+
+.contact-form .Select-menu-outer li:first-child {
+    border-radius: 2px 2px 0 0;
+}
+
+.contact-form .Select-menu-outer li:last-child {
+    border-radius: 0 0 2px 2px;
+}
+
+.contact-form .Select-menu-outer li:hover {
+    background-color: #443b55;;
+    color: #fff;
+}
+.contact-form .Select-placeholder,
+.Select--single > .Select-control .Select-value {
+    padding-left: 0;
+}
+
+
+/*select*/
+.contact-form .input-inline .Select-control {
+    border: none;
+    border-bottom: 2px solid #b6b6b6;
+    border-radius: 0;
+}
+.contact-form .input-inline .Select-placeholder {
+    font-size: 14px;
+    font-family: 'Open Sans';
+    color: #757575;
+    padding: 0;
+    line-height: 30px;
+    top: 22px;
+}
+.contact-form .input-inline .Select-value {
+    top: 0;
+}
+.contact-form .input-inline .Select-menu-outer {
+    top: 10px;
+}
+.contact-form .input-inline .Select-placeholder b {
+    color: #d71616;
+}
+.contact-form .input-inline .Select-clear-zone {
+    display: none;
+}
+.contact-form .input-inline .Select-input {
+    height: 34px;
+}
+.contact-form .input-inline .Select-value {
+    outline: 0;
+}
+.Select--single .is-focused .has-value {
+    outline: 0;
+    border: none;
+}
+.has-value.Select--single > .Select-control .Select-value .Select-value-label, .has-value.is-pseudo-focused.Select--single > .Select-control .Select-value .Select-value-label {
+    color: #221e22;
+}
+.has-value .Select-control {
+    top: 10px;
+}
+.contact-form .input-inline input {
+    padding: 0;
+    line-height: 45px;
+}
+.contact-form .input-inline.Select-arrow-zone {
+    cursor: pointer;
+    display: inherit;
+    position: inherit;
+    text-align: inherit;
+    vertical-align: inherit;
+    width: inherit;
+    padding-right: inherit;
+}
+.sign-input-box select.form-control {
+    padding: 10px!important;
+    width: 100%;
+    border: 0px!important;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #abaaaa;
+    background-color: #fff;
+    transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    line-height: 15px;
+    border-bottom: 2px solid #b6b6b6!important;
+    padding-left: 0!important;
+}
+.sign-input-box select.form-control:focus {
+    outline: 0;
+}
+.is-focused:not(.is-open) > .Select-control {
+    box-shadow: none;
+}
 /* deep-challenge */
 .deep-challenge {
     background: #fafafa;
@@ -1623,9 +1921,6 @@ h2.dark-title {
 .contacts-form .minimal-form-input {
     display: block;
 }
-.contacts-textarea {
-    margin: 90px 0 0 0;
-}
 .contacts-phone {
     margin: 65px 0 0;
 }
@@ -1646,17 +1941,34 @@ h2.dark-title {
     -webkit-box-sizing: content-box!important;
     -moz-box-sizing: content-box!important;
     overflow-y: hidden;
-    padding-top: 3px!important;
+    padding-top: 0!important;
     padding-bottom: 10px!important;
     border: none!important;
     position: relative;
     margin: 0;
     font-size: 16px!important;
     width:100%;
-    border-bottom: 1px solid #b6b6b6 !important;
+    border-bottom: 2px solid #b6b6b6 !important;
 }
-.contacts-textarea label {
-    top:0;
+.contacts-textarea {
+    width: 100%;
+    padding: 0;
+}
+.contacts-area::-webkit-input-placeholder {
+    font-family: 'Open Sans';
+    font-size: 14px;
+}
+.contacts-area::-moz-placeholder {
+    font-family: 'Open Sans';
+    font-size: 14px;
+}
+.contacts-area:-ms-input-placeholder {
+    font-family: 'Open Sans';
+    font-size: 14px;
+}
+.contacts-area:-moz-placeholder {
+    font-family: 'Open Sans';
+    font-size: 14px;
 }
 .send-bt {
     display: block;
