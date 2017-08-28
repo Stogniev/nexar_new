@@ -550,6 +550,49 @@
 	.past-press-list li:after { top:9px;}
 }
 @media (max-width: 799px) {
+	#an_testimonials #an_all_comment_box {
+		padding: 0;
+	}
+	#an_testimonials #an_all_comment_box .an_comment_loaded_box {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	#an_testimonials .an_comment_box {
+		width: 100%;
+		opacity: 1;
+		padding: 0;
+	}
+	#an_testimonials .an_comment_box:nth-child(2) .an_testimonial_text_title_box {
+		background: transparent;
+	}
+	#an_testimonials .an_comment_box:nth-child(2) .an_testimonial_text_title {
+		color: #000;
+	}
+	.an_testimonial_text_title_box {
+		height: auto;
+		padding-left: 51px;
+		padding-top: 35px;
+	}
+	#an_testimonials .an_comment_box:nth-child(2) .an_testimonial_text_title_box:after {
+		display: none;
+	}
+	.an_testimonial_text_title_box:before {
+		width: 25px;
+		height: 25px;
+		left: 18px;
+		top: 41px;
+		background-size: cover;
+	}
+	.an_testimonial_text_title_box p {
+		font: 15px/25px 'Open Sans' !important;
+	}
+	#an_testimonials .an_comment_box .an_comment_user_name {
+		font: 14px/20px 'Open Sans' !important;
+	}
+	.an_comment_box {
+		margin-bottom: 10px;
+	}
 	.insurance-page .info-box-right .info-content,
 	.insurance-page .info-box-left .info-content {
 		padding:0;
