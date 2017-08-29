@@ -1200,10 +1200,16 @@ button:hover {
     background: url(../images/company-bn.png) no-repeat;
     background-size: cover;
 }
+.top-bn.company-bn .title-box {
+    background: rgba(0,0,0,0.65);
+    margin: 0 0 26px 0;
+    max-width: 850px;
+    text-align: left;
+    padding: 32px 0 10px;
+}
 .company-bn-title {
     display:inline-block;
     font-size: 60px;
-    background: rgba(0,0,0,0.65);
     padding: 0 35px 0 53px;
     line-height: 73px;
     text-transform: uppercase;
@@ -1214,13 +1220,12 @@ button:hover {
 .company-bn-sub {
     display:inline-block;
     font-size: 40px;
-    background: rgba(0,0,0,0.65);
     padding: 0 45px 0 53px;
     line-height: 73px;
     text-transform: uppercase;
     font-family: 'montserratregular';
     color: #ffffff;
-    margin: 0 0 26px 0;
+
 }
 .company-bn-text {
     display:inline-block;
@@ -1237,7 +1242,6 @@ button:hover {
     -webkit-box-align: center;
 	-webkit-align-items: center;
     align-content: center;
-    justify-content: center;
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -1520,6 +1524,19 @@ h2.dark-title {
     -ms-flex-pack: center;
     justify-content: center;
 }
+.contact-form.inline {
+    max-width: 920px;
+    margin: 0 auto;
+    border: none;
+}
+.contact-form.inline .input-inline {
+    flex-direction: row;
+    margin-left: -50px;
+}
+.contact-form.inline .input-inline>div {
+    width: 50%;
+    margin-left: 50px;
+}
 .contact-form .input-inline {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1638,14 +1655,15 @@ textarea:focus:-ms-input-placeholder {
 }
 
 .contact-form button {
-    width: 172px;
-    background-color: #fbb040;
+   background-color: #fbb040;
     color: #fff;
     padding: 12px 20px;
     font-size: 20px;
-    font-family: 'Open Sans';
+    font-family: 'montserratregular';
     border: 0;
     margin-top: 65px;
+    text-transform: uppercase;
+    letter-spacing: -0.2px;
 }
 .contact-form button:focus {
     outline: none;
