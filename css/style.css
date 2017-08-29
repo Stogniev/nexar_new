@@ -1587,7 +1587,7 @@ textarea:focus:-ms-input-placeholder {
 .arrow-dropdown:after {
     position: absolute;
     content: '';
-    top: -2px;
+    top: 14px;
     right: 10px;
     width: 0;
     height: 0;
@@ -1600,7 +1600,7 @@ textarea:focus:-ms-input-placeholder {
 .arrow-dropdown:before {
     position: absolute;
     content: '';
-    top: 0;
+    top: 15px;
     right: 10px;
     width: 0;
     height: 0;
@@ -1616,7 +1616,7 @@ textarea:focus:-ms-input-placeholder {
     outline: 0;
 }
 
-.contact-form .input-inline .placeholder span {
+.contact-form .input-inline .placeholder .text-required-star {
     color: #d71616;
 }
 .contact-form input:focus + .placeholder,
@@ -1652,7 +1652,7 @@ textarea:focus:-ms-input-placeholder {
 }
 .contact-form .Select-menu-outer {
     position: absolute;
-    top: calc(100% + 2px);
+    top: 0;
     width: 100%;
     z-index: 5;
     -webkit-transition: all 0s ease 0.2s, opacity 0.2s ease;
@@ -1660,7 +1660,7 @@ textarea:focus:-ms-input-placeholder {
     background-color: #fff;
     -webkit-box-shadow: 0 0 5px rgba(151,151,151,0.6);
     box-shadow: 0 0 5px rgba(151,151,151,0.6);
-    margin: 0;
+    margin: 30px 0 0;
 }
 .contact-form .Select-menu-outer>div:hover {
     background: #44355b;
@@ -1730,7 +1730,7 @@ textarea:focus:-ms-input-placeholder {
     color: #757575;
     padding: 0;
     line-height: 30px;
-    top: 22px;
+    top: 0;
 }
 .contact-form .input-inline .Select-value {
     top: 0;
@@ -1953,6 +1953,7 @@ textarea:focus:-ms-input-placeholder {
 .contacts-textarea {
     width: 100%;
     padding: 0;
+    margin-top: 15px;
 }
 .contacts-area::-webkit-input-placeholder {
     font-family: 'Open Sans';
