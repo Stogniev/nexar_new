@@ -41,8 +41,8 @@ a.send {
 	-webkit-border-radius: 3px;
 	border-radius: 3px;
 }
-a.send span {
-	padding-right:44px;
+a.send > :first-child {
+  padding-right:44px;
 	background: url(../images/press-kit/message-icon.svg) no-repeat 100% 50%;
 }
 a.send:hover { opacity:0.8;}
