@@ -1,0 +1,215 @@
+.subheader {
+  font: 28px/32px 'open_sanslight', Arial, Helvetica, sans-serif;
+  text-align: center; }
+
+.program-img {
+  background: url("../images/program/header-prog.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center; }
+
+.apply-wrap {
+  -webkit-perspective: 800px;
+    -moz-perspective: 800px;
+    perspective: 800px;
+    display: block;
+    margin: 0 auto;
+    width: 260px;
+}
+
+.apply {
+  display: block;
+  text-align: center;
+    background: #388e3c;
+    color: #fff;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.55s cubic-bezier(0.68, 0, 0.265, 1);
+    -moz-transition: all 0.55s cubic-bezier(0.68, 0, 0.265, 1);
+    transition: all 0.55s cubic-bezier(0.68, 0, 0.265, 1);
+    padding: 15px 22px;
+    box-shadow: 0 -3px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 -3px rgba(0, 0, 0, 0.1) inset;
+    -webkit-box-shadow: 0 -3px rgba(0, 0, 0, 0.1) inset;
+    -o-box-shadow: 0 -3px rgba(0, 0, 0, 0.1) inset;
+}
+.apply:before {
+    width: 100%;
+    height: 30%;
+    left: 0;
+    top: 99%;
+    background: #307933;
+    -webkit-transform-origin: 0% 0%;
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform-origin: 0% 0%;
+    -moz-transform: rotateX(-90deg);
+    -ms-transform-origin: 0% 0%;
+    -ms-transform: rotateX(-90deg);
+    transform-origin: 0% 0%;
+    transform: rotateX(-90deg);
+    -webkit-transition: all 0.55s cubic-bezier(0.68, 0, 0.265, 1);
+    -moz-transition: all 0.55s cubic-bezier(0.68, 0, 0.265, 1);
+    transition: all 0.55s cubic-bezier(0.68, 0, 0.265, 1);
+    -webkit-font-smoothing: antialiased;
+    content: '';
+    position: absolute;
+    z-index: -1;
+}
+.apply:after {
+    width: 100%;
+    height: 37%;
+    left: 0;
+    top: -35%;
+    -webkit-transform-origin: 0% 100%;
+    -webkit-transform: rotateX(90deg);
+    -moz-transform-origin: 0% 100%;
+    -moz-transform: rotateX(90deg);
+    transform-origin: 0% 100%;
+    transform: rotateX(90deg);
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.55s cubic-bezier(0.68, 0, 0.265, 1);
+    -moz-transition: all 0.55s cubic-bezier(0.68,0, 0.265, 1);
+    transition: all 0.55s cubic-bezier(0.68, 0, 0.265, 1);
+    -webkit-font-smoothing: antialiased;
+}
+.apply>span {
+  left: 0px;
+    transition: opacity 0.2s ease-out, left 0.2s ease-out;
+    -webkit-transition: opacity 0.2s ease-out, left 0.2s ease-out;
+    position: relative;
+    color: #fff;
+    letter-spacing: 2px;
+    font: 13px/20px 'montserratregular', Arial, Helvetica, sans-serif;
+}
+.apply:hover {
+  text-decoration: none;
+  -webkit-transform: rotateX(20deg);
+    -moz-transform: rotateX(20deg);
+    -ms-transform: rotateX(20deg);
+    transform: rotateX(20deg);
+    -webkit-transition: all 0.45s cubic-bezier(0.68, 0, 0.265, 3);
+    -moz-transition: all 0.45s cubic-bezier(0.68, 0, 0.265, 3);
+    transition: all 0.45s cubic-bezier(0.68, 0, 0.265, 3);
+}
+.apply:hover:before {
+  -webkit-transition: all 0.45s cubic-bezier(0.68, 0, 0.265, 3);
+    -moz-transition: all 0.45s cubic-bezier(0.68, 0, 0.265, 3);
+    transition: all 0.45s cubic-bezier(0.68, 0, 0.265, 3);
+}
+.apply:hover:after {
+  -webkit-transition: all 0.45s cubic-bezier(0.68, 0, 0.265, 3);
+    -moz-transition: all 0.45s cubic-bezier(0.68, 0, 0.265, 3);
+    transition: all 0.45s cubic-bezier(0.68, 0, 0.265, 3);
+}
+
+.prog-text {
+  width: 64%;
+  margin: 3% auto;
+  text-align: center;
+  color: #444; }
+  .prog-text h3 {
+    width: 85%;
+    margin: 3% auto 0;
+      text-transform: uppercase;
+    font: 600 22px/36px 'montserratregular', Arial, Helvetica, sans-serif; }
+.prog-text h3.small-h3 {
+    font-size: 19px;
+}
+.description-prog + h3 {
+    font: 600 19px/34px 'open_sansregular', Arial, Helvetica, sans-serif;
+  }
+  .prog-text .head-text {
+    line-height: 36px; }
+  .prog-text .description-prog {
+    text-align: left;
+    width: 60%;
+    margin: 10% auto; }
+  .prog-text .description-prog h3 {
+    margin: 0;
+      text-transform: uppercase;
+    font: 600 19px/34px 'open_sansregular', Arial, Helvetica, sans-serif; }
+  .prog-text .description-prog-he h3 {
+    text-align: right; }
+  .prog-text .description-prog-he p {
+    text-align: center; }
+    .prog-text .description-prog ul {
+      margin: 0 0 30px 30px;
+      color: #444; }
+.prog-text ul li {
+    list-style-type: disc;
+    font-size: 16px;
+    line-height: 29px;
+}
+.prog-text .description-prog-he ul {
+      margin: 0 35px 30px 0;
+      color: #444;
+      text-align: right; }
+  .prog-text .markets {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+    padding-top: 30px; }
+    .prog-text .markets-wrap h3 {
+      font: 600 30px/42px 'montserratregular', Arial, Helvetica, sans-serif;
+      text-align: center;
+      text-transform: uppercase;
+      width: 100%; }
+    .prog-text .markets a {
+      color: #388e3c;
+      text-decoration: none; }
+  
+  .prog-text .market-other {
+    width: 33%;
+    margin: 0 auto; }
+    .prog-text .market-other h3 {
+      font: 600 30px/42px 'montserratregular', Arial, Helvetica, sans-serif;
+      text-align: center;
+      text-transform: uppercase;
+      width: 100%; }
+    .prog-text .market-other a {
+      color: #388e3c;
+      text-decoration: none; }
+@media only screen and (max-width: 992px) {
+
+    .prog-text .markets {
+      flex-direction: column;
+      justify-content: center; } 
+      .prog-text {
+        width: 100%;
+        padding: 0 2%; }
+    .prog-text .description-prog {
+      width: 100%;
+      padding: 0 4%; } 
+    .prog-text .market-other {
+      width: 100%;
+      }
+    .program-img h1 {
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 4px;
+    }
+    .subheader {
+        font-size: 15px !important;
+    }
+    }
+@media only screen and (max-width: 480px) {
+  .program-img {
+      height: 140px !important;
+      margin-top: 59px;
+  }
+}
+
+/*# sourceMappingURL=program.css.map */
+
+
+/* AY:  from old site  all.global.css  */
+h1 {
+    font: 600 44px/60px "montserratregular", Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    margin: 0 0 8px 0;
+    text-align: center;
+}

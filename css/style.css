@@ -2365,10 +2365,13 @@ h2.title-md {
     font-weight: 500;
     color: #444444;
     margin: 0 0 25px 0;
+    min-height: 108px;
 }
 .open-position-content {
     font-size: 20px;
     color: #000000;
+    min-height: 83px;
+    height: 105px;
 }
 .open-position-content p {
     margin: 5px 0;
@@ -2399,7 +2402,7 @@ h2.title-md {
     padding: 0 65px;
     float: left;
     position: relative;
-    min-height: 280px;  /* AY: need review */
+    margin-bottom: 30px;
 }
 .open-positions-box:before {
     width: 1px;
@@ -2411,6 +2414,9 @@ h2.title-md {
     position: absolute;
     right: 0;
     top: 29px;
+}
+.open-positions-box:nth-child(3):before {
+    display: none;
 }
 .open-positions-holder .open-positions-box:last-child:before {
     display: none;
@@ -2560,4 +2566,23 @@ h2.title-md {
 .google-map {
     height: 250px;
     width: 100%;
+}
+.header-img {
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
