@@ -108,7 +108,9 @@ a.send:hover { opacity:0.8;}
 .social-list li .ico {
 	width:57px;
 	height:57px;
-	display:block;
+	display:flex;
+	justify-content: center;
+	align-items: center;
 	background:#fbb040;
 	text-align:center;
 	line-height:57px;
@@ -278,4 +280,7 @@ a.send:hover { opacity:0.8;}
 	color:#221e22;
 	margin:0 0 33px;
 	letter-spacing: 0.1px;
+}
+.contact-user.top .name {
+	color: #fff;
 }

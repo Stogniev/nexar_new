@@ -68,17 +68,23 @@
         margin: 0;
     }
     .slide-prev, .slide-next {
-        background: none;
+        background: transparent;
     }
     .slide-prev {
-        left: 38px;
+        left: 0;
     }
     .slide-next {
-        right: 38px;
+        right: 0;
     }
     .slide-prev i, .slide-next i {
         font-size: 24px;
     }
+	.slide-prev:hover, .slide-next:hover {
+		background: transparent;
+	}
+	#slider h1 {
+		font-size: 18px;
+	}
     .features-list li {
         width:100%;
         float: none;
@@ -394,6 +400,12 @@
 	.managing-iphone {
 		width:50%;
 	}
+	.deep-challenge {
+		padding-bottom: 100px;
+	}
+	.job-video iframe {
+		width: 100%;
+	}
 	.title-lg {
 		font-size:28px;
 		line-height:1.4;
@@ -570,7 +582,7 @@
 		position: static;
 	}
 }
-@media (max-width: 799px) {
+@media (max-width: 768px) {
 	#an_testimonials #an_all_comment_box {
 		padding: 0;
 	}
@@ -636,13 +648,27 @@
 		flex-direction: column;
 	}
 	.insurance-page .info-text { max-width:100%;}
+	.contact-form {
+		padding: 0;
+		border: none;
+	}
 	.contact-form .input-inline {
 		-webkit-flex-direction: column;
 		flex-direction: column;
 		padding:0 34px;
 	}
-	.contact-form .input-inline div {
-		padding-top:40px;
+	.contact-form.inline .input-inline>div {
+		margin: 37px 0 0;
+		width: 100%;
+	}
+	.contact-form .input-inline input.contacts-area {
+		line-height: 19px;
+	}
+	.contact-form label > .placeholder {
+		top: 0;
+	}
+	.contact-form .Select {
+		margin-top: 0;
 	}
 	.contact-form .input-inline input { width:100%;}
 	.check-block {
@@ -655,6 +681,12 @@
 	}
 }
 @media (max-width: 767px) {
+	.contact-form-block {
+		padding:20px 0 70px;
+	}
+	.contact-form.inline .input-inline {
+		flex-direction: column;
+	}
 	.try-bt {
 		height:40px;
 		line-height:40px;
@@ -1405,9 +1437,6 @@
 		font-size: 12px;
 		line-height: 22px;
 	}
-	.contact-form-block {
-		padding:20px 0 70px;
-	}
 	.contact-form-block h3 {
 		font-size: 20px;
 		margin:0 0 15px;
@@ -1416,10 +1445,6 @@
 		padding:6px 0;
 		line-height:19px;
 		font-size:14px;
-	}
-	.contact-form .input-inline div {
-		padding-top:19px;
-		margin-top:18px;
 	}
 	.solutions-page h3 {
 		font-size:20px;
@@ -1560,21 +1585,23 @@
 		margin:0;
 		left:auto;
 		width:auto;
-		padding:50px 20px 80px;
 	}
-	.contacts-section .contacts-form {
-		margin:0;
+	.contacts-section .contact-form {
+		margin: 0 0 100px;
 		padding:0;
 	}
 	.contacts-section h2 {
 		font-size:20px;
 		margin:0 0 40px;
 	}
+	.contact-form button {
+		font-size: 13px;
+	}
 	.contacts-section .sign-input-box {
 		padding-bottom:40px;
 	}
 	.contacts-section .contacts-phone { margin:0;}
-	.contacts-section .contacts-textarea { margin-top:20px;}
+	.contacts-section .contacts-textarea { margin: 0;}
 	.contacts-section .info-check {
 		margin:15px 0 40px;
 	}

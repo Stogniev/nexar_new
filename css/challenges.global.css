@@ -28,7 +28,8 @@
         width: 90%;
     }
     .header-challenge {
-        padding-top: 50px;
+        padding-top: 100px;
+        padding-bottom: 0;
         width: 80%;
         margin: 0 auto;
     }
@@ -129,7 +130,9 @@
     font-size: 16px;
     line-height: 20px;
     letter-spacing: -0.5px;
-    margin: 20px 0 0; }
+    margin: 20px 0 0;
+    font-weight: normal;
+}
 .row-box .fancy-box .inner h2 {
     font: 600 22px/36px 'montserratregular', Arial, Helvetica, sans-serif;
     text-transform: uppercase;
@@ -142,6 +145,21 @@
     text-transform: uppercase;
     position: relative;
     z-index: 10; }
+.fancy-box .closed {
+    text-transform: uppercase;
+    background: rgba(199, 199, 199, .8);
+    line-height: 30px;
+    width: 234px;
+    text-align: center;
+    padding: 0 10px;
+    font: 15px/44px 'montserratregular';
+}
+.fancy-box .closed i {
+    margin-right: 10px;
+}
+.fancy-box:hover .closed {
+    background: #D62E2E;
+}
 .row-box .fancy-box .link-text .arrow {
     line-height: 26px!important;
     font-size: 14px!important;
@@ -159,17 +177,9 @@
     border-radius: 100px;
     text-align: center;
     border: 2px solid rgba(255,255,255,0.4);
+    color: rgba(255,255,255,0.7);
 }
-.link-text .arrow:before {
-    content: "\f105";
-    color: #fff;
-    top: -2px;
-    right: -1px;
-    display: block;
-    transition: all 0.35s cubic-bezier(0.12, 0.75, 0.4, 1);
-    -webkit-transition: all 0.35s cubic-bezier(0.12, 0.75, 0.4, 1);
-    position: relative;
-}
+
 .link-text .arrow:after {
     display: block;
     content: ' ';
@@ -190,9 +200,11 @@
 .fancy-box:hover .link-text .arrow {
     border-color: transparent;
 }
-.fancy-box:hover .link-text .arrow:before {
+.fancy-box:hover .link-text .arrow i {
     transform: translateX(9px);
     -webkit-transform: translateX(9px);
+    display: block;
+    color: rgba(255,255,255,1);
 }
 .fancy-box:hover .link-text .arrow:after {
     opacity: 1;
@@ -274,7 +286,7 @@
     align-items: flex-end;
     color: #fff;
     font-size: 40px;
-    font-family: 'open_sansregular';
+    font-family: 'Open Sans';
     font-weight: 600;
     padding: 0 30px;
 }
@@ -555,6 +567,89 @@ h3 {
 }
 .map-section .arrow-scroll-down {
     margin: 30px auto 0;
+}
+/*leaderboard-section*/
+.leaderboard-section {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto;
+}
+.leaderboard-panel {
+    width: 500px;
+    height: 130px;
+    overflow: hidden;
+    margin: 40px auto;
+    transition: .2s;
+}
+.leaderboard-section.active .leaderboard-panel {
+    height: auto;
+}
+.leaderboard-panel li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px 0 19px;
+    font: 14px/40px 'montserratregular';
+    color: #221e22;
+}
+.leaderboard-panel .orange {
+    color: #fbb040;
+}
+.winner {
+    background: #fbb040;
+    box-shadow: 0 4px 11px 0 rgba(131, 76, 22, 0.37);
+    color: #fff;
+}
+.winner .lead-name {
+    color: #fff;
+    border-left: 1px solid rgba(231, 143, 55, .5);
+}
+
+.winner .lead-value {
+    color: #221e22;
+    font: 16px/40px 'montserratbold';
+}
+.leaderboard-panel li>div {
+    display: flex;
+}
+.lead-index {
+    width: 33px;
+    position: relative;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+}
+.lead-name {
+    padding-left: 19px;
+}
+.lead-value {
+    color: #fbb040;
+}
+.btn.dropdown {
+    border: none;
+    background: transparent;
+    font-family: 'montserratbold';
+    margin: 0 auto;
+}
+.btn.dropdown:focus {
+    outline: none;
+}
+.btn.dropdown i {
+    color: #fbb040;
+    vertical-align: bottom;
+    margin-left: 15px;
+    font-size: 30px;
+}
+.btn.dropdown.less i {
+    transform: rotate(180deg);
+}
+.btn.dropdown.less {
+    display: none;
+}
+.leaderboard-section.active .btn.dropdown.less {
+    display: block;
+}
+.leaderboard-section.active .btn.dropdown.all {
+    display: none;
 }
 /* overview */
 .overview-section {
@@ -900,6 +995,9 @@ h4 {
     margin: 32px 0;
     display: block;
 }
+.evaluation-text b {
+    font-family: 'Open Sans';
+}
 .evaluation-bold {
     font-weight: 600;
     font-style: italic;
@@ -916,6 +1014,12 @@ h4 {
 }
 .evaluation-content {
     overflow: hidden;
+}
+.evaluation-content ul {
+    margin-left: 30px;
+}
+.evaluation-content li {
+    list-style-type: disc;
 }
 .evaluation-section .eval-title {
     margin-bottom: 10px;
@@ -978,10 +1082,9 @@ h4 {
     color: #388e3c;
 }
 .apply-challenge {
-    width: 324px;
     height: 62px;
     line-height: 62px;
-    margin: 29px 0 0;
+    margin: 29px 0 0 20px;
     font-size: 18px;
 }
 .apply-challenge-block {
@@ -994,6 +1097,17 @@ h4 {
 }
 .apply-challenge-block:hover{opacity:0.7;}
 
+.buttons {
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: -20px;
+}
+.apply-challenge:first-child {
+    width: 40%;
+}
+.apply-challenge:last-child {
+    width: 60%;
+}
 /*slider*/
 .carousel-overlay {
     height: 100vh;
@@ -1052,7 +1166,7 @@ h4 {
     color: #fff;
     font-size: 24px;
     font-weight: 600;
-    font-family: 'open_sansregular';
+    font-family: 'Open Sans';
 }
 .close-carousel:before, .close-carousel:after {
     position: absolute;
@@ -1437,9 +1551,16 @@ h4 {
         margin: 35px auto 0;
         font-size: 13px;
     }
+    .apply-challenge:first-child, .apply-challenge:last-child {
+        width: 100%;
+    }
+    .buttons {
+        flex-direction: column;
+    }
     .competition-content {
         padding-bottom: 15px;
     }
+
 }
 @media only screen and (max-width: 480px) {
     .challenge-bn {
@@ -1579,5 +1700,189 @@ h4 {
         margin-bottom: 43px;
         margin-left: 0;
     }
+}
+/*challenges uploadTo*/
+.github.upload {
+    border-bottom: 1px solid #ddd;
+}
+.upload-inputs {
+    position: relative;
+}
+.upload-section {
+    margin: 60px auto 47px;
+    text-align: center;
+    max-width: 640px;
+}
+.upload-section h2 {
+    font-family: 'montserratregular';
+    font-size: 35px;
+    letter-spacing: 0.1px;
+    color: #fbb040;
+    font-weight: normal;
+}
+.upload-section p {
+    font-size: 16px;
+    line-height: 1.88;
+    color: #221e22;
+}
+.github.upload .download-btn {
+    width: 325px;
+    margin-bottom: 25px;
+}
+.overview-section.upload-inputs {
+    display: flex;
+    padding: 31px 0 52px;
+}
+.input-file-box .input-hidden {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    width: 100%;
+}
+.input-file-box {
+    display: flex;
+    align-items: center;
+    width: 383px;
+    height: 62px;
+    position: relative;
+    margin-right: 19px;
+    flex: 2 1 auto;
+}
+.input-file-box input:focus {
+    outline: 0;
+}
+.input-styling {
+    flex: 3 1 auto;
+    border: solid 2px #fbb040;
+    line-height: 58px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.choose-file {
+    display: flex;
+    flex: 1 1 100%;
+}
+.choose-file .browse {
+    flex: 1 1 138px;
+    background-color: #fbb040;
+    color: #fff;
+    font-family: 'montserratregular';
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 62px;
+    text-align: center;
+    cursor: pointer;
+    display: block;
+    padding: 0 20px;
+}
+.upload-inputs .download-btn {
+    width: 149px;
+    height: 61px;
+    background-color: #e0e0e0;
+    border: 1px solid transparent;
+    color: #fff;
+    flex: 1 1 auto;
+    font-size: 16px;
+    font-family: 'montserratregular';
+}
+.download-btn:focus {
+    outline: 0;
+}
+.upload-inputs .download-btn.active {
+    background-color: #fbb040;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 992px) {
+    .overview-section.upload-inputs {
+        flex-direction: column;
+        align-items: center;
+    }
+    .input-file-box {
+        margin-bottom: 19px;
+    }
+}
+@media only screen and (max-width: 525px) {
+    .input-file-box {
+        width: 100%;
+    }
+}
+
+.upload-inputs-wrap {
+    position: relative;
+}
+/*progress-bar*/
+.progress-wrap {
+    display: flex;
+    width: 100%;
+}
+.react-progress-bar {
+    visibility: visible;
+    opacity: 1;
+    transition: all 400ms;
+    z-index: 9999;
+    border: solid 2px #fbb040;
+    height: 62px;
+    width: 100%;
+}
+.download-btn.cancel {
+    background: #ee5622;
+    flex: 1 1 auto;
+    line-height: 57px;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'montserratregular';
+}
+.react-progress-bar.react-progress-bar-on-top {
+    height: 100%;
+}
+
+.react-progress-bar.react-progress-bar-hide {
+    opacity: 0;
+    visibility: hidden;
+    z-index: -10;
+}
+
+.react-progress-bar-percent {
+    height: 58px;
+    background: #fbb040;
+    transition: all 200ms ease;
+}
+.progress-info-wrap {
+    left: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex: 9 1 auto;
+    position: relative;
+    margin-right: 19px;
+}
+.progress-info {
+    display: flex;
+    justify-content: space-between;
+    line-height: 60px;
+    position: absolute;
+    top: 0;
+    left: 19px;
+    right: 21px;
+    z-index: 10000;
+}
+.upload-error {
+    border: red;
+    border-width: 3px;
+    border-style: solid;
+    padding: 3px;
+    margin: auto;
+    color: red;
+}
+.upload-succeeded {
+    background-color: lightgreen;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.submition-info {
+    text-align: left;
 }
 /*# sourceMappingURL=challenge.css.map */

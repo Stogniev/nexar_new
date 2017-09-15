@@ -6,6 +6,9 @@
 .solutions-page section {
     margin-bottom: 150px;
 }
+.solutions-page section.right {
+    background: #fafafa;
+}
 .solutions-page .left {
     padding-left: 117px;
 }

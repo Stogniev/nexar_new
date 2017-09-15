@@ -134,7 +134,7 @@
 .contacts-us-section h3 {
 	font-size:24px;
 	text-align:center;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'montserratregular', sans-serif;
 }
 .contacts-us-form {
     max-width: 920px;
@@ -246,9 +246,6 @@
     cursor: pointer;
     opacity: 0.7;
 }
-
-
-/* AY: from old site sitystream.css */
 .sub-logo {
     font: 20px/33px 'open_sansregular';
     color: #fff;
@@ -669,15 +666,6 @@ figcaption {
 
 
 @media only screen and (max-width : 992px) {
-    /*.img-container {*/
-        /*position: relative;*/
-    /*}*/
-    /*.city-slogan {*/
-        /*bottom: 120px;*/
-    /*}*/
-    /*.city-description {*/
-        /*padding-top: 0;*/
-    /*}*/
     .map-bg {
         height: auto;
     }

@@ -1,9 +1,9 @@
 @import "tos.css";
 @import "solutions.css";
-@import "insurance.css";
+
 @import "full-team.css";
 @import "press-kit.css";
-@import "automotive.css";
+
 @import "404.css";
 
 @font-face {
@@ -53,6 +53,8 @@ a:focus {
 }
 a {
     text-decoration: none;
+    cursor: pointer;
+    color: #388e3c;
 }
 b {
     font-family: 'montserratbold';
@@ -62,18 +64,6 @@ ul {
     margin: 0;
     list-style: none;
 }
-/*input:focus::-webkit-input-placeholder,
-textarea:focus::-webkit-input-placeholder {
-    color: transparent !important;
-}
-input:focus::-moz-placeholder,
-textarea:focus::-moz-placeholder {
-    color: transparent !important;
-}
-input:focus:-moz-placeholder,
-textarea:focus:-moz-placeholder{
-    color: transparent !important;
-}*/
 input:focus,
 textarea:focus {
     outline: none;
@@ -106,13 +96,13 @@ button:hover {
     top: 0px;
     left: 0px;
     position: fixed;
-    padding: 40px 0px 0px 0px;
+    padding: 40px 0px 20px 0px;
     z-index: 9999;
     transition: box-shadow 0.3s ease, border-color 0.3s ease, margin 0.25s ease-out;
 }
 .header.white {
-    padding-top: 28px;
-    padding-bottom: 23px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     background: #fff;
     box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2);
 }
@@ -124,7 +114,6 @@ button:hover {
 }
 .header.active {
     background-color: #fff;
-    padding: 23px 0 0 0;
     transition: box-shadow 0.3s ease, border-color 0.3s ease, margin 0.25s ease-out;
     box-shadow: 0 3px 45px rgba(0,0,0,0.15);
     -moz-box-shadow: 0 3px 45px rgba(0,0,0,0.15);
@@ -176,8 +165,13 @@ button:hover {
     position: relative;
     font-family: 'montserratregular';
 }
+
+.nav > li.framed {
+    border: 2px solid #888;
+}
+
 .nav > li > a {
-    padding: 5px 0 50px;
+    padding: 5px 0;
     margin-left: 15px;
     margin-right: 15px;
     color: #ffffff;
@@ -193,7 +187,6 @@ button:hover {
 .header.active .nav > li > a,
 .header.white .nav > li > a {
     color: #000;
-    padding-bottom: 18px;
     padding-top: 2px;
 }
 .header.white .nav > li > a {
@@ -299,7 +292,7 @@ button:hover {
 .slide-prev,
 .slide-next {
     position: absolute;
-    top: 52%!important;
+    top: 54%!important;
     z-index: 130;
     display: block;
     color: #fff;
@@ -339,6 +332,31 @@ button:hover {
 .slide-prev:hover,
 .slide-next:hover {
     background-color: rgba(0,0,0,0.8);
+}
+#slider>div  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#slider>div:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+#slider h1 {
+    font-size: 50px;
+    line-height: 60px;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    text-shadow: 0 3px 15px rgba(0, 0, 0, .5);
+    z-index: 1;
+    text-transform: uppercase;
 }
 /* features */
 .features {
@@ -550,6 +568,10 @@ button:hover {
     background: url(../images/driver_signup.png) no-repeat 50% 0;
     background-size: cover;
     z-index: 1;
+    text-align: center;
+}
+.sign-up .active-bt {
+    margin-top: 80px;
 }
 .title-sub {
     display: block;
@@ -893,6 +915,10 @@ button:hover {
     float: left;
     width:25%;
 }
+.col-md-5total {
+    float: left;
+    width:20%;
+}
 .footer-top {
     padding: 55px 0;
 }
@@ -1230,6 +1256,7 @@ button:hover {
 .company-bn-text {
     display:inline-block;
     font-size: 24px;
+    line-height: 32px;
     background: rgba(0,0,0,0.65);
     padding: 26px 120px 38px 53px;
     color: #ffffff;
@@ -1323,6 +1350,12 @@ h2 {
 }
 h2.dark-title {
     color: #444444;
+}
+.contacts-section form {
+    background: #fff;
+}
+.contact-form .input-inline input.contacts-area {
+    line-height: 30px;
 }
 /* job */
 .job-section {
@@ -1531,7 +1564,6 @@ h2.dark-title {
 }
 .contact-form.inline .input-inline {
     flex-direction: row;
-    margin-left: -50px;
 }
 .contact-form.inline .input-inline>div {
     width: 50%;
@@ -1852,18 +1884,11 @@ textarea:focus:-ms-input-placeholder {
 }
 /* contacts */
 .contacts-section {
-    background: #fff;
     padding: 0 0 90px;
     position: relative;
-    height: 600px;
+    margin-top: -190px;
 }
-.contacts-inner {
-    top: -200px;
-    left: 50%;
-    width:600px;
-    margin: 0 0 0 -300px;
-    position: absolute;
-}
+
 .contacts-form {
     width: 600px;
     border-radius: 5px;
@@ -1953,14 +1978,11 @@ textarea:focus:-ms-input-placeholder {
     -webkit-transition: all 0s linear;
     -o-transition: all 0s linear;
     resize: none;
-    min-height: 42px;
-    height: 42px;
     box-sizing: content-box!important;
     -webkit-box-sizing: content-box!important;
     -moz-box-sizing: content-box!important;
     overflow-y: hidden;
     padding-top: 0!important;
-    padding-bottom: 10px!important;
     border: none!important;
     position: relative;
     margin: 0;
@@ -1971,23 +1993,27 @@ textarea:focus:-ms-input-placeholder {
 .contacts-textarea {
     width: 100%;
     padding: 0;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 .contacts-area::-webkit-input-placeholder {
     font-family: 'Open Sans';
     font-size: 14px;
+    font-weight: normal;
 }
 .contacts-area::-moz-placeholder {
     font-family: 'Open Sans';
     font-size: 14px;
+    font-weight: normal;
 }
 .contacts-area:-ms-input-placeholder {
     font-family: 'Open Sans';
     font-size: 14px;
+    font-weight: normal;
 }
 .contacts-area:-moz-placeholder {
     font-family: 'Open Sans';
     font-size: 14px;
+    font-weight: normal;
 }
 .send-bt {
     display: block;
@@ -2585,4 +2611,9 @@ h2.title-md {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+}
+
+.undecorated-link {
+  color: inherit;
+  text-decoration: inherit;
 }

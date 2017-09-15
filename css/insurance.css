@@ -20,36 +20,201 @@
     text-transform: uppercase;
     font: 24px/27px 'montserratregular';
 }
-.insurance-page .info-blocks {
-    padding: 0 0 176px;
-    max-width: 1140px;
-    box-sizing: border-box;
-    margin: 0 auto;
-}
-.insurance-page .info-box {
+.telematics-img {
+    min-height: 375px;
+    background: url('../images/telematics/insurance-bg.png') no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin-top: 150px;
 }
-.insurance-page .info-text {
-    max-width: 520px;
-    font-size: 20px;
-    line-height: 32px;
+.telematics-img h1,
+.telematics-img h3 {
+    color: #fff;
 }
-.insurance-page .info-left-img,
-.insurance-page .info-right-img {
-    width: 470px;
+.telematics-img h1 {
+    font-size: 42px;
+    line-height: 45px;
+    font-weight: normal;
 }
-.insurance-page .info-box-right .info-content {
-    width: auto;
+.telematics-img h3 {
+    letter-spacing: 0.1px;
+    text-transform: uppercase;
+    font: 24px/27px 'montserratregular';
+    color: #f8a132;
+}
+.telematics-description {
+    max-width: 746px;
+    margin: 86px auto 0;
+    color: #221e22;
+    text-align: left;
+    background: #fff;
+}
+.telematics-description h3 {
+    text-transform: uppercase;
+    font: 24px/33px 'montserratregular';
+    letter-spacing: 0.1px;
+    text-align: center;
+}
+.telematics-description h3>span {
+    color: #f8a132;
+}
+.telematics-description p {
+    font-size: 16px;
+    line-height: 28px;
+}
+.telematics-description p:first-child {
+    margin-bottom: 10px;
+}
+.telematics-content {
+    margin-top: 146px;
+    margin-bottom: 166px;
+    background: #fff;
+}
+.telematics-content .row {
+    margin: 0 auto 90px;
+    display: flex;
+    max-width: 830px;
+}
+.telematics-content .left-side {
+    margin-right: 87px;
+    margin-top: 7px;
+}
+.telematics-content .left-side img {
+    max-width: 80px;
+}
+.telematics-content .yellow {
+    color: #f8a132;
+}
+.left-side.move,
+.right-side.move {
+    opacity: 1;
+    transform: translateX(0);
+}
+/**/
+
+.telematics-content .head-text {
+    font: 24px/29px 'montserratregular';
+    text-transform: uppercase;
+    letter-spacing: 0.1px;
+    color: #221e22;
+    margin: 0 0 10px;
+    text-align: left;
+}
+.telematics-content p {
+    font-size: 16px;
+    line-height: 28px;
+}
+.contact-form-block {
+    background: #221e22;
+    padding: 75px 0 30px;
+}
+.contact-form-block h2 {
+    text-transform: uppercase;
+    font-family: 'montserratregular';
+    color: #f8a132;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 47px;
     margin-top: 0;
 }
-.insurance-page .info-img {
-    width: 100%;
+.contact-form-block .contact-form.inline .input-inline>div input {
+    color: #fff;
 }
-.insurance-page .info-title {
-    font-size: 24px;
-    line-height: 27px;
-    margin-bottom: 15px;
+.contact-form-block .contact-form .input-inline input:focus {
+    border-color: #fff;
 }
+@media only screen and (max-width : 992px) {
+    .black-header.insuran {
+        background: #221e22;
+    }
+    .telematics-img h1 {
+        font-size: 30px;
+        line-height: 37px;
+    }
+    .telematics-img h3 {
+        font-size: 18px;
+        line-height: 21px;
+        max-height: 650px;
+        text-align: center;
+    }
+    .telematics-description {
+        max-width: 595px;
+    }
+    .telematics-content p {
+        width: 100%;
+    }
+    .telematics-content .head-text {
+        margin-bottom: 23px;
+    }
+    .telematics-content p {
+        margin-bottom: 40px;
+    }
+    .img-responsive {
+        width: 100%;
+    }
+}
+@media only screen and (max-width : 992px) {
+    .telematics-img h1 {
+        font-size: 28px;
+        line-height: 32px;
+    }
+    .telematics-img h3 {
+        font-size: 16px;
+        line-height: 32px;
+    }
+    .telematics-description {
+        margin-top: 71px;
+        padding: 0 17px 0 18px;
+    }
+    .telematics-description p {
+        font-size: 15px;
+        line-height: 33px;
+    }
+    .telematics-content {
+        margin-top: 89px;
+        margin-bottom: 0;
+    }
+    .telematics-content .head-text {
+        text-align: left;
+    }
+    .telematics-content .row {
+        margin-bottom: 43px;
+        padding: 0 5%;
+    }
+    .telematics-content p {
+        font-size: 15px;
+        line-height: 32px;
+    }
+
+    .telematics-content .left-side {
+        margin-right: 30px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .telematics-content .right-side {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+@media only screen and (max-width : 725px) {
+    .telematics-img h1,
+    .telematics-img h3 {
+        max-width: 272px;
+    }
+}
+@media only screen and (max-width : 525px) {
+    .telematics-content .row {
+        flex-direction: column;
+    }
+    .telematics-content .left-side {
+        margin-right: 0;
+        text-align: center;
+    }
+}
+
+
+
+

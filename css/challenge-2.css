@@ -1,0 +1,100 @@
+/* @font-face { */
+/*     font-family: 'Montserrat'; */
+/*     src: url('../fonts/montserrat-regular-webfont.eot'); */
+/*     src: url('../fonts/montserrat-regular-webfont.eot?#iefix') format('embedded-opentype'), */
+/*     url('../fonts/montserrat-regular-webfont.woff2') format('woff2'), */
+/*     url('../fonts/montserrat-regular-webfont.woff') format('woff'), */
+/*     url('../fonts/montserrat-regular-webfont.ttf') format('truetype'), */
+/*     url('../fonts/montserrat-regular-webfont.svg#montserratregular') format('svg'); */
+/*     font-weight: normal; */
+/*     font-style: normal; */
+/* } */
+
+
+.leaderboard-header {
+    margin-bottom: 6px;
+}
+
+.Thats-where-you-get {
+  width: 641px;
+  height: 60px;
+  /* font-family: OpenSans; */
+  /* font-size: 16px; */
+  /* line-height: 1.88; */
+  /* text-align: center; */
+  /* color: #221e22; */
+}
+
+.Submission-ends-in {
+  font-family: montserratregular;
+  font-size: 18px;
+  text-align: center;
+  color: #221e22;
+
+  margin-top: 60px;
+  /* margin-bottom: 13px; */
+
+  display: flex;
+  /*align-items: center;*/
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+
+#backtimer>span {
+  height: 55px;
+  max-width: 68px;
+
+  display: inline-block;
+
+  text-transform: uppercase;
+  text-align: left;
+}
+
+
+#backtimer>span::after {
+  opacity: 0.4;
+  font-family: montserratregular;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #221e22;
+
+  vertical-align: super;
+}
+
+
+#backtimer>span:not(:last-child)::after {
+  content: ":";
+
+  margin: 0px 10px 0px 10px;
+}
+
+#backtimer>span:last-child::after {
+  content: "";
+}
+
+
+
+#backtimer>span>span:nth-of-type(1) {
+  opacity: 0.4;
+  font-family: montserratregular;
+  font-size: 10px;
+  font-weight: bold;
+  color: #221e22;
+}
+
+#backtimer>span>span:nth-of-type(2) {
+  font-family: montserratregular;
+  font-size: 36px;
+  /* text-align: right; */
+  color: #fbb040;
+
+  width: 1440px;
+}
+
+.lead-caption {
+  text-align: center;
+  color: #221e22;
+  opacity: 0.4;
+}

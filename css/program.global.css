@@ -129,7 +129,8 @@
     width: 60%;
     margin: 10% auto; }
   .prog-text .description-prog h3 {
-    margin: 0;
+    margin: 0 auto;
+      text-align: center;
       text-transform: uppercase;
     font: 600 19px/34px 'open_sansregular', Arial, Helvetica, sans-serif; }
   .prog-text .description-prog-he h3 {
