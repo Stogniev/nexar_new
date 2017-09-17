@@ -916,24 +916,6 @@ textarea:focus:-ms-input-placeholder {
 
 @media (max-width:1000px) {
 
-    .header,
-    .header.active {
-        background: #fff;
-        padding: 15px 0px 20px;
-    }
-    .header .logo,
-    .header.active .logo {
-        width: 84px;
-        height: 24px;
-        background: url('../images/logo.png') no-repeat;
-        background-size: 84px 24px;
-        -webkit-transition: 0.3s ease;
-        transition: 0.3s ease;
-    }
-    .header-top .container {
-        padding: 0 18px;
-        position: relative;
-    }
     .show-menu {
         height: 20px;
         position: absolute;
@@ -970,11 +952,6 @@ textarea:focus:-ms-input-placeholder {
         margin: 25px 0 0 0;
     }
     .features-list li:first-child {margin: 0;}
-    .container {
-        width: 100%;
-        margin: 0 auto;
-        padding: 0 20px;
-    }
     .slog-slide p {
         font-size: 20px;
         line-height: 35px;
@@ -1090,53 +1067,6 @@ textarea:focus:-ms-input-placeholder {
     }
     .row {
         margin: 0;
-    }
-    .header-nav {
-        display: none;
-        background: #27CCC0;
-        width: 300px;
-        padding: 33px;
-        color: #eefbfa;
-        overflow-y: scroll;
-        overflow-x: hidden;
-        position: fixed;
-        top:0;
-        right: 0;
-        z-index: 1000;
-        height: 100%;
-    }
-    .nav {
-        overflow: hidden;
-    }
-    .nav li {
-        float: none;
-        width:100%;
-        position: relative;
-    }
-    .nav li.active a {
-        -moz-opacity: 1;
-        opacity: 1;
-    }
-    .nav li a {
-        -moz-opacity: 0.7;
-        opacity: 0.7;
-        transition: opacity 0.2s ease;
-        -webkit-transition: opacity 0.2s ease;
-        -moz-transition: opacity 0.2s ease;
-        font-size: 36px;
-        line-height: 48px;
-        font-family: 'Open Sans';
-        font-weight: 700;
-        letter-spacing: -1px;
-        margin: 0;
-        text-transform: none;
-        padding: 0;
-    }
-    .nav > li > a:after {
-        display: none;
-    }
-    .nav > li:hover .inner-nav {
-        display: none;
     }
 }
 @media only screen and (max-width: 1000px) and (min-width: 690px) {
@@ -1318,9 +1248,6 @@ textarea:focus:-ms-input-placeholder {
     }
     .map-section .arrow-scroll-down {
         margin: 10px auto 0;
-    }
-    .container {
-        padding: 0 20px;
     }
     .apply-btn {
         width:230px;
