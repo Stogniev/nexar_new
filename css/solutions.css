@@ -7,7 +7,7 @@
     margin-bottom: 150px;
 }
 .solutions-page section.right {
-    background: #fafafa;
+    background: #fff;
 }
 .solutions-page .left {
     padding-left: 117px;
@@ -18,6 +18,11 @@
     justify-content: space-between;
     align-items: center;
 }
+
+.solutions-page .insurance_img {
+    margin-left: 5%;
+}
+
 .solutions-page .right figure {
     justify-content: flex-start;
 }

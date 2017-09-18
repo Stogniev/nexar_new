@@ -36,7 +36,6 @@
     .header.active .logo {
         width: 84px;
         height: 24px;
-        background: url(../images/logo.png) no-repeat;
         background-size: 84px 24px;
         transition: 0.3s ease;
     }

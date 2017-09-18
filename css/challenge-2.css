@@ -31,8 +31,9 @@
   text-align: center;
   color: #221e22;
 
-  margin-top: 60px;
+  /* margin-top: 60px; */
   /* margin-bottom: 13px; */
+  padding-top: 10px;
 
   display: flex;
   /*align-items: center;*/
@@ -40,6 +41,9 @@
   text-transform: uppercase;
 }
 
+#backtimer {
+  transform: translateX(3px);
+}  
 
 #backtimer>span {
   height: 55px;
@@ -97,4 +101,12 @@
   text-align: center;
   color: #221e22;
   opacity: 0.4;
+}
+
+.backtimer-block {
+  background-image: url(/images/challenge/prize.svg);
+  background-repeat:no-repeat;
+  background-position: center center;
+
+  margin-top: 25px;
 }
